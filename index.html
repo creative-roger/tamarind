@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tamarind Mombasa — Luxury coastal seafood dining on the Indian Ocean. Freshly caught fish, Swahili spices, and unforgettable ocean views since 1972." />
+  <title>Tamarind | Ocean to Table · Mombasa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="Tamarind Home">
+        <span class="nav__logo-name">Tamarind</span>
+        <span class="nav__logo-tag">Ocean to Table · Mombasa</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#signature-dishes" class="nav__link">Menu</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#about" class="nav__link">Our Story</a></li>
+        <li><a href="#reservation" class="nav__link nav__link--cta">Reserve</a></li>
+      </ul>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile drawer -->
+    <div class="nav__drawer" id="navDrawer" aria-hidden="true">
+      <ul class="nav__drawer-links">
+        <li><a href="#signature-dishes" class="nav__drawer-link">Menu</a></li>
+        <li><a href="#experience" class="nav__drawer-link">Experience</a></li>
+        <li><a href="#about" class="nav__drawer-link">Our Story</a></li>
+        <li><a href="#reservation" class="nav__drawer-link">Reserve</a></li>
+      </ul>
+    </div>
+    <div class="nav__overlay" id="navOverlay" aria-hidden="true"></div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════ HERO ══════════════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Hero section">
+    <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+
+    <!-- Parallax Layers -->
+    <div class="hero__parallax" id="heroParallax">
+      <div class="hero__layer hero__layer--deep" data-depth="0.1" aria-hidden="true"></div>
+      <div class="hero__layer hero__layer--mid"  data-depth="0.25" aria-hidden="true"></div>
+      <div class="hero__layer hero__layer--fore" data-depth="0.4" aria-hidden="true"></div>
+    </div>
+
+    <!-- Gradient mesh -->
+    <div class="hero__mesh" aria-hidden="true"></div>
+
+    <!-- Content -->
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal-char" aria-label="Since 1972">Est. 1972 · Mombasa, Kenya</p>
+      <h1 class="hero__headline">
+        <span class="hero__line reveal-line">Where the Ocean</span>
+        <span class="hero__line reveal-line delay-1">Meets the Plate</span>
+      </h1>
+      <p class="hero__subheadline reveal-fade">Mombasa's finest seafood experience since 1972</p>
+      <div class="hero__actions reveal-fade delay-2">
+        <a href="#reservation" class="btn btn--primary" aria-label="Reserve a table at Tamarind">Reserve a Table</a>
+        <a href="#signature-dishes" class="btn btn--ghost" aria-label="View our menu">View Menu</a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+    <!-- Wave divider -->
+    <div class="hero__wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="#F7F4EE"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════════════ SIGNATURE DISHES ════════════════════════════════════════ -->
+  <section class="dishes" id="signature-dishes" aria-labelledby="dishes-heading">
+    <div class="dishes__header reveal-up">
+      <p class="section-eyebrow">Fresh Daily · Indian Ocean</p>
+      <h2 class="section-headline" id="dishes-heading">Signature Catches</h2>
+      <p class="section-sub">Freshly caught from the Indian Ocean every morning</p>
+    </div>
+
+    <div class="dishes__grid">
+
+      <article class="dish-card" data-tilt aria-label="Grilled Lobster Thermidor">
+        <div class="dish-card__inner">
+          <div class="dish-card__bg" style="--hue:200" aria-hidden="true"></div>
+          <div class="dish-card__shimmer" aria-hidden="true"></div>
+          <div class="dish-card__content">
+            <span class="dish-card__tag">Chef's Pick</span>
+            <div class="dish-card__icon" aria-hidden="true">🦞</div>
+            <h3 class="dish-card__name">Grilled Lobster Thermidor</h3>
+            <p class="dish-card__origin">Indian Ocean</p>
+            <div class="dish-card__footer">
+              <span class="dish-card__price">KES 4,800</span>
+              <a href="#reservation" class="dish-card__cta" aria-label="Order Grilled Lobster Thermidor">Order →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card" data-tilt aria-label="Swahili Spiced Prawns">
+        <div class="dish-card__inner">
+          <div class="dish-card__bg" style="--hue:30" aria-hidden="true"></div>
+          <div class="dish-card__shimmer" aria-hidden="true"></div>
+          <div class="dish-card__content">
+            <span class="dish-card__tag">Local Favourite</span>
+            <div class="dish-card__icon" aria-hidden="true">🍤</div>
+            <h3 class="dish-card__name">Swahili Spiced Prawns</h3>
+            <p class="dish-card__origin">Mombasa Bay</p>
+            <div class="dish-card__footer">
+              <span class="dish-card__price">KES 2,600</span>
+              <a href="#reservation" class="dish-card__cta" aria-label="Order Swahili Spiced Prawns">Order →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card" data-tilt aria-label="Whole Red Snapper">
+        <div class="dish-card__inner">
+          <div class="dish-card__bg" style="--hue:350" aria-hidden="true"></div>
+          <div class="dish-card__shimmer" aria-hidden="true"></div>
+          <div class="dish-card__content">
+            <span class="dish-card__tag">Daily Fresh</span>
+            <div class="dish-card__icon" aria-hidden="true">🐟</div>
+            <h3 class="dish-card__name">Whole Red Snapper</h3>
+            <p class="dish-card__origin">Shimba Reef</p>
+            <div class="dish-card__footer">
+              <span class="dish-card__price">KES 3,200</span>
+              <a href="#reservation" class="dish-card__cta" aria-label="Order Whole Red Snapper">Order →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card" data-tilt aria-label="Coconut Crab Curry">
+        <div class="dish-card__inner">
+          <div class="dish-card__bg" style="--hue:45" aria-hidden="true"></div>
+          <div class="dish-card__shimmer" aria-hidden="true"></div>
+          <div class="dish-card__content">
+            <span class="dish-card__tag">House Special</span>
+            <div class="dish-card__icon" aria-hidden="true">🦀</div>
+            <h3 class="dish-card__name">Coconut Crab Curry</h3>
+            <p class="dish-card__origin">Kenyan Coast</p>
+            <div class="dish-card__footer">
+              <span class="dish-card__price">KES 3,800</span>
+              <a href="#reservation" class="dish-card__cta" aria-label="Order Coconut Crab Curry">Order →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card" data-tilt aria-label="Oysters on Ice">
+        <div class="dish-card__inner">
+          <div class="dish-card__bg" style="--hue:170" aria-hidden="true"></div>
+          <div class="dish-card__shimmer" aria-hidden="true"></div>
+          <div class="dish-card__content">
+            <span class="dish-card__tag">Seasonal</span>
+            <div class="dish-card__icon" aria-hidden="true">🦪</div>
+            <h3 class="dish-card__name">Oysters on Ice</h3>
+            <p class="dish-card__origin">Kilifi Creek</p>
+            <div class="dish-card__footer">
+              <span class="dish-card__price">KES 1,800</span>
+              <a href="#reservation" class="dish-card__cta" aria-label="Order Oysters on Ice">Order →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card" data-tilt aria-label="Seared Tuna Tataki">
+        <div class="dish-card__inner">
+          <div class="dish-card__bg" style="--hue:260" aria-hidden="true"></div>
+          <div class="dish-card__shimmer" aria-hidden="true"></div>
+          <div class="dish-card__content">
+            <span class="dish-card__tag">New</span>
+            <div class="dish-card__icon" aria-hidden="true">🐠</div>
+            <h3 class="dish-card__name">Seared Tuna Tataki</h3>
+            <p class="dish-card__origin">Deep Sea</p>
+            <div class="dish-card__footer">
+              <span class="dish-card__price">KES 2,900</span>
+              <a href="#reservation" class="dish-card__cta" aria-label="Order Seared Tuna Tataki">Order →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ EXPERIENCE CAROUSEL ════════════════════════════════════ -->
+  <section class="experience" id="experience" aria-labelledby="experience-heading">
+    <div class="experience__header reveal-up">
+      <p class="section-eyebrow section-eyebrow--light">Discover</p>
+      <h2 class="section-headline section-headline--light" id="experience-heading">The Tamarind Experience</h2>
+    </div>
+
+    <div class="carousel" id="carousel" role="region" aria-label="Tamarind experiences carousel">
+      <div class="carousel__track" id="carouselTrack">
+
+        <div class="carousel__slide" role="group" aria-label="Slide 1 of 4">
+          <div class="carousel__slide-bg" aria-hidden="true"></div>
+          <div class="carousel__slide-inner">
+            <div class="carousel__slide-img" style="--slide-hue:200" aria-hidden="true">
+              <div class="carousel__slide-img-inner"></div>
+            </div>
+            <div class="carousel__slide-content">
+              <span class="carousel__number">01</span>
+              <h3 class="carousel__title">Sunset Deck Dining</h3>
+              <p class="carousel__desc">Dine under open skies with the Indian Ocean as your backdrop</p>
+              <a href="#reservation" class="carousel__link" aria-label="Book sunset deck dining">Book This Experience →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__slide" role="group" aria-label="Slide 2 of 4">
+          <div class="carousel__slide-bg" aria-hidden="true"></div>
+          <div class="carousel__slide-inner">
+            <div class="carousel__slide-img" style="--slide-hue:215" aria-hidden="true">
+              <div class="carousel__slide-img-inner"></div>
+            </div>
+            <div class="carousel__slide-content">
+              <span class="carousel__number">02</span>
+              <h3 class="carousel__title">Private Yacht Events</h3>
+              <p class="carousel__desc">Exclusive dining experiences on the waters of Mombasa</p>
+              <a href="#reservation" class="carousel__link" aria-label="Book private yacht event">Book This Experience →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__slide" role="group" aria-label="Slide 3 of 4">
+          <div class="carousel__slide-bg" aria-hidden="true"></div>
+          <div class="carousel__slide-inner">
+            <div class="carousel__slide-img" style="--slide-hue:185" aria-hidden="true">
+              <div class="carousel__slide-img-inner"></div>
+            </div>
+            <div class="carousel__slide-content">
+              <span class="carousel__number">03</span>
+              <h3 class="carousel__title">Live Catch Selection</h3>
+              <p class="carousel__desc">Choose your fish from our fresh daily catch display</p>
+              <a href="#reservation" class="carousel__link" aria-label="Book live catch experience">Book This Experience →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__slide" role="group" aria-label="Slide 4 of 4">
+          <div class="carousel__slide-bg" aria-hidden="true"></div>
+          <div class="carousel__slide-inner">
+            <div class="carousel__slide-img" style="--slide-hue:40" aria-hidden="true">
+              <div class="carousel__slide-img-inner"></div>
+            </div>
+            <div class="carousel__slide-content">
+              <span class="carousel__number">04</span>
+              <h3 class="carousel__title">Swahili Tasting Menu</h3>
+              <p class="carousel__desc">A 7-course journey through coastal Kenyan flavours</p>
+              <a href="#reservation" class="carousel__link" aria-label="Book Swahili tasting menu">Book This Experience →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="carousel__controls" aria-label="Carousel controls">
+      <button class="carousel__btn carousel__btn--prev" id="carouselPrev" aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Slide indicators">
+        <button class="carousel__dot active" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+        <button class="carousel__dot" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+        <button class="carousel__dot" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+        <button class="carousel__dot" role="tab" aria-selected="false" aria-label="Slide 4"></button>
+      </div>
+      <button class="carousel__btn carousel__btn--next" id="carouselNext" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+    <div class="carousel__progress" id="carouselProgress" aria-hidden="true">
+      <div class="carousel__progress-bar" id="carouselProgressBar"></div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════ ABOUT / STORY ════════════════════════════════════════ -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="about__inner">
+
+      <div class="about__visual" aria-hidden="true">
+        <div class="about__visual-main">
+          <div class="about__visual-ocean"></div>
+          <div class="about__visual-deco about__visual-deco--1"></div>
+          <div class="about__visual-deco about__visual-deco--2"></div>
+        </div>
+        <div class="about__visual-quote">
+          <p class="about__quote"><em>"The Indian Ocean provides;<br>we simply honour it."</em></p>
+          <span class="about__quote-attr">— Chef Omar Hassan, Executive Chef</span>
+        </div>
+      </div>
+
+      <div class="about__text">
+        <p class="section-eyebrow reveal-up">Our Heritage</p>
+        <h2 class="section-headline reveal-up" id="about-heading">50 Years of<br>Ocean Heritage</h2>
+        <p class="about__body reveal-up">Nestled on the historic Old Town waterfront of Mombasa, Tamarind has been the heartbeat of coastal fine dining since 1972. Every dish tells the story of the Indian Ocean — its abundance, its culture, its soul.</p>
+
+        <div class="about__stats reveal-up">
+          <div class="about__stat">
+            <span class="about__stat-num" data-count="50" aria-label="50 years">0</span>
+            <span class="about__stat-unit">+</span>
+            <p class="about__stat-label">Years of Excellence</p>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num" data-count="200" aria-label="200 dishes">0</span>
+            <span class="about__stat-unit">+</span>
+            <p class="about__stat-label">Signature Dishes</p>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num" data-count="4" data-decimal=".9" aria-label="4.9 stars">0</span>
+            <span class="about__stat-unit">.9 ★</span>
+            <p class="about__stat-label">Guest Rating</p>
+          </div>
+        </div>
+
+        <a href="#reservation" class="btn btn--accent reveal-up">Dine With Us</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════ RESERVATION CTA ═══════════════════════════════════════ -->
+  <section class="reservation" id="reservation" aria-labelledby="reservation-heading">
+    <!-- Animated wave top -->
+    <div class="reservation__wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C480,-20 960,100 1440,40 L1440,0 L0,0 Z" fill="#F7F4EE"/>
+      </svg>
+    </div>
+
+    <div class="reservation__inner">
+      <div class="reservation__header reveal-up">
+        <p class="section-eyebrow section-eyebrow--light">Join Us</p>
+        <h2 class="section-headline section-headline--light" id="reservation-heading">Reserve Your Table</h2>
+        <p class="reservation__sub">Experience the finest seafood on the Mombasa waterfront</p>
+      </div>
+
+      <form class="reservation__form" id="reservationForm" aria-label="Table reservation form" novalidate>
+        <div class="form__row">
+          <div class="form__field">
+            <label for="name" class="form__label">Full Name</label>
+            <input type="text" id="name" name="name" class="form__input" placeholder="Your name" required aria-required="true" autocomplete="name" />
+          </div>
+          <div class="form__field">
+            <label for="email" class="form__label">Email Address</label>
+            <input type="email" id="email" name="email" class="form__input" placeholder="your@email.com" required aria-required="true" autocomplete="email" />
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__field">
+            <label for="date" class="form__label">Date</label>
+            <input type="date" id="date" name="date" class="form__input" required aria-required="true" />
+          </div>
+          <div class="form__field">
+            <label for="time" class="form__label">Time</label>
+            <select id="time" name="time" class="form__input form__select" required aria-required="true">
+              <option value="" disabled selected>Select time</option>
+              <option value="12:00">12:00 PM — Lunch</option>
+              <option value="13:00">1:00 PM — Lunch</option>
+              <option value="18:00">6:00 PM — Dinner</option>
+              <option value="19:00">7:00 PM — Dinner</option>
+              <option value="20:00">8:00 PM — Dinner</option>
+              <option value="21:00">9:00 PM — Late Dinner</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <label for="guests" class="form__label">Guests</label>
+            <select id="guests" name="guests" class="form__input form__select" required aria-required="true">
+              <option value="" disabled selected>Number of guests</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6+">6+ Guests</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__field">
+          <label for="notes" class="form__label">Special Requests</label>
+          <textarea id="notes" name="notes" class="form__input form__textarea" placeholder="Dietary requirements, occasion, preferred seating…" rows="3" aria-label="Special requests"></textarea>
+        </div>
+        <button type="submit" class="btn btn--submit" id="submitBtn" aria-label="Reserve my table">
+          <span class="btn__text">Reserve My Table</span>
+          <span class="btn__ripple" aria-hidden="true"></span>
+        </button>
+      </form>
+
+      <!-- Success message -->
+      <div class="reservation__success" id="reservationSuccess" aria-live="polite" hidden>
+        <div class="reservation__success-icon" aria-hidden="true">✦</div>
+        <h3>Reservation Confirmed</h3>
+        <p>We look forward to welcoming you to Tamarind. A confirmation will be sent to your email.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════ FOOTER ══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <p class="footer__name">Tamarind</p>
+        <p class="footer__tagline"><em>Ocean to Table · Mombasa</em></p>
+        <p class="footer__address">Old Town Waterfront, Mombasa, Kenya<br>+254 41 471 747 · hello@tamarind.co.ke</p>
+      </div>
+      <div class="footer__links">
+        <h4 class="footer__col-title">Explore</h4>
+        <ul>
+          <li><a href="#signature-dishes">Menu</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#reservation">Reservations</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4 class="footer__col-title">Hours</h4>
+        <ul>
+          <li>Mon – Sat: 12pm – 10:30pm</li>
+          <li>Sunday: 12pm – 9:00pm</li>
+          <li>Public Holidays: 1pm – 9pm</li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4 class="footer__col-title">Follow</h4>
+        <ul>
+          <li><a href="#" aria-label="Follow Tamarind on Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Follow Tamarind on Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Follow Tamarind on TripAdvisor">TripAdvisor</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 Tamarind Mombasa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
