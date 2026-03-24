@@ -1058,34 +1058,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
   margin-top: 2.5rem;
   padding: 0 2rem;
-}
-
-.carousel__btn {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1.5px solid rgba(201, 169, 110, 0.25);
-  color: var(--clr-accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--transition-normal);
-  flex-shrink: 0;
-}
-
-.carousel__btn svg {
-  width: 18px;
-  height: 18px;
-}
-
-.carousel__btn:hover {
-  background: var(--clr-accent);
-  color: var(--clr-primary);
-  border-color: var(--clr-accent);
-  transform: scale(1.1);
 }
 
 .carousel__dots {

@@ -315,8 +315,6 @@ const isTouch  = () => window.matchMedia('(pointer: coarse)').matches;
 ════════════════════════════════════════════════════════════ */
 (function initCarousel() {
   const track    = document.getElementById('carouselTrack');
-  const prevBtn  = document.getElementById('carouselPrev');
-  const nextBtn  = document.getElementById('carouselNext');
   const dots     = document.querySelectorAll('.carousel__dot');
   const progressBar = document.getElementById('carouselProgressBar');
   if (!track) return;
@@ -377,10 +375,6 @@ const isTouch  = () => window.matchMedia('(pointer: coarse)').matches;
       progressBar.style.width = `${((current + 1) / total) * 100}%`;
     }
   };
-
-  // Button clicks
-  nextBtn?.addEventListener('click', () => { next(); stopAuto(); startAuto(); });
-  prevBtn?.addEventListener('click', () => { prev(); stopAuto(); startAuto(); });
 
   // Dot clicks
   dots.forEach((dot, i) => {
